@@ -1,0 +1,27 @@
+{
+    "name": "@mep/eslint",
+    "version": "1.0.0",
+    "description": "MEP Linting and formatting configuration",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf dist/",
+        "create-dir": "mkdir -p dist",
+        "copy": "cp eslint.config.js dist/ && cp prettier.config.js dist/ && cp index.js dist/",
+        "build": "run-s clean create-dir copy"
+    },
+    "peerDependencies": {
+        "eslint": "^8.36.0",
+        "prettier": "^2.8.6"
+    },
+    "dependencies": {
+        "@rushstack/eslint-patch": "^1.2.0",
+        "@shopify/eslint-plugin": "^42.1.0",
+        "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+        "eslint": "^8.36.0",
+        "npm-run-all": "latest",
+        "prettier": "^2.8.6"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+}
